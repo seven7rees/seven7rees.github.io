@@ -4,5 +4,5 @@
 
 ## Pages
 
-- [About Patrick W. Davis](https://seven7rees.github.io/about.html): Full career biography, expertise, board and advisory roles, and career timeline.
-- [Home](https://seven7rees.github.io/): Summary, expertise areas, and geography.
+- [About Patrick W. Davis](https://patrickwdavis.com/about.html): Full career biography, expertise, board and advisory roles, and career timeline.
+- [Home](https://patrickwdavis.com/): Summary, expertise areas, and geography.

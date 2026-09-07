@@ -85,4 +85,4 @@ Disallow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://seven7rees.github.io/sitemap.xml
+Sitemap: https://patrickwdavis.com/sitemap.xml
