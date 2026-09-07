@@ -23,65 +23,94 @@ h3{font-size:1rem;font-weight:700;margin-top:1.5rem;margin-bottom:.2rem}
 p{margin-bottom:.8rem}
 ul{margin:.4rem 0 .8rem 1.3rem}
 li{margin-bottom:.3rem}
+table{width:100%;border-collapse:collapse;margin:.6rem 0 1rem}
+th{text-align:left;padding:.4rem .6rem;background:var(--border);font-weight:700;font-size:.875rem}
+td{padding:.4rem .6rem;border-bottom:1px solid var(--border);font-size:.875rem;vertical-align:top}
 footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--border);font-size:.8rem;color:var(--light)}
 @media print{body{padding:0;background:#fff}footer{position:static}}
 </style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://patrickwdavis.com/about.html#person",
-  "name": "Patrick W. Davis",
-  "alternateName": "Patrick Davis",
-  "url": "https://patrickwdavis.com",
-  "jobTitle": "Director of Sales and Marketing",
-  "description": "Patrick W. Davis is a commercial and marketing leader with 25+ years driving revenue growth, brand strategy, and demand generation across luxury mountain resort destinations and multi-property portfolios.",
-  "disambiguatingDescription": "Vail, Colorado luxury hospitality commercial and marketing executive with DMO governance experience",
-  "homeLocation": {
-    "@type": "Place",
-    "name": "Vail, Colorado"
-  },
-  "hasOccupation": {
-    "@type": "Occupation",
-    "name": "Director of Sales and Marketing",
-    "occupationalCategory": "11-2021.00",
-    "skills": [
-      "luxury brand strategy",
-      "destination marketing",
-      "revenue management",
-      "group sales",
-      "distribution partnerships",
-      "AI-augmented marketing operations"
-    ]
-  },
-  "knowsAbout": [
-    "luxury hospitality marketing",
-    "destination marketing and DMO governance",
-    "multi-property resort sales strategy",
-    "brand repositioning and luxury rebrand",
-    "group and convention sales",
-    "revenue management and pricing strategy",
-    "distribution channel partnerships",
-    "in-house marketing team build-out",
-    "AI and automation in marketing operations"
-  ],
-  "alumniOf": [
+  "@graph": [
     {
-      "@type": "CollegeOrUniversity",
-      "name": "Colorado State University",
-      "url": "https://www.colostate.edu"
-    }
-  ],
-  "memberOf": [
+      "@type": "WebSite",
+      "@id": "https://patrickwdavis.com/#website",
+      "name": "Patrick W. Davis",
+      "url": "https://patrickwdavis.com"
+    },
     {
-      "@type": "Organization",
-      "name": "Vail Local Marketing District Advisory Council",
-      "url": "https://www.vlmd.org"
+      "@type": "ProfilePage",
+      "@id": "https://patrickwdavis.com/about.html#aboutpage",
+      "url": "https://patrickwdavis.com/about.html",
+      "name": "About Patrick W. Davis | Commercial and Marketing Leader",
+      "dateModified": "2026-09-06",
+      "isPartOf": {"@id": "https://patrickwdavis.com/#website"},
+      "mainEntity": {"@id": "https://patrickwdavis.com/about.html#person"},
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem","position": 1,"name": "Home","item": "https://patrickwdavis.com/"},
+          {"@type": "ListItem","position": 2,"name": "About","item": "https://patrickwdavis.com/about.html"}
+        ]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://patrickwdavis.com/about.html#person",
+      "name": "Patrick W. Davis",
+      "alternateName": "Patrick Davis",
+      "url": "https://patrickwdavis.com",
+      "jobTitle": "Director of Sales and Marketing",
+      "description": "Patrick W. Davis is a commercial and marketing leader with 25+ years driving revenue growth, brand strategy, and demand generation across luxury mountain resort destinations and multi-property portfolios.",
+      "disambiguatingDescription": "Vail, Colorado luxury hospitality commercial and marketing executive with DMO governance experience",
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Vail, Colorado"
+      },
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Director of Sales and Marketing",
+        "occupationalCategory": "11-2021.00",
+        "skills": [
+          "luxury brand strategy",
+          "destination marketing",
+          "revenue management",
+          "group sales",
+          "distribution partnerships",
+          "AI-augmented marketing operations"
+        ]
+      },
+      "knowsAbout": [
+        "luxury hospitality marketing",
+        "destination marketing and DMO governance",
+        "multi-property resort sales strategy",
+        "brand repositioning and luxury rebrand",
+        "group and convention sales",
+        "revenue management and pricing strategy",
+        "distribution channel partnerships",
+        "in-house marketing team build-out",
+        "AI and automation in marketing operations"
+      ],
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Colorado State University",
+          "url": "https://www.colostate.edu"
+        }
+      ],
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "Vail Local Marketing District Advisory Council",
+          "url": "https://www.vlmd.org"
+        }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/davispatrick",
+        "https://vailgov.granicus.com/boards/w/042fbeba58974740/members/1834546"
+      ]
     }
-  ],
-  "sameAs": [
-    "https://www.linkedin.com/in/davispatrick",
-    "https://vailgov.granicus.com/boards/w/042fbeba58974740/members/1834546"
   ]
 }
 </script>
@@ -93,6 +122,12 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--border);font-
 <nav>
 <a href="/">Home</a>
 <a href="/about.html">About</a>
+<a href="/faq.html">FAQ</a>
+<a href="/in-housing-hotel-marketing.html">In-Housing</a>
+<a href="/dmo-governance.html">DMO Governance</a>
+<a href="/condo-hotel-commercial-leadership.html">Condo-Hotel</a>
+<a href="/luxury-hotel-rebrand.html">Luxury Rebrand</a>
+<a href="/citywide-convention-sales.html">Citywide Sales</a>
 </nav>
 </header>
 <main>
@@ -102,12 +137,34 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--border);font-
 <p>Patrick W. Davis is a commercial and marketing leader with 25+ years driving revenue growth, brand strategy, and demand generation across luxury mountain resort destinations and multi-property portfolios.</p>
 <p>He is Director of Sales and Marketing for an independently managed luxury condo-hotel in the Vail Valley, Colorado, owning sales, marketing, revenue management, and distribution. He is bringing marketing in-house using AI and automation, and he secured the property's selection for Costco Travel's national market launch and placement in the American Express Hotel Collection.</p>
 <p>He serves on the Vail Local Marketing District Advisory Council, the official destination marketing organization for the Town of Vail, helping plan and recommend its $5.33M annual destination marketing budget.</p>
-<p>Earlier, he led the luxury rebrand of The Hythe, a Luxury Collection Resort in Vail, delivering $28M in transient and group revenue and $4M in catering revenue annually. At Grand Hyatt Washington and Hyatt Regency Washington he directed enterprise sales strategy against a combined $100M group and catering budget, led a 21-person sales organization, and handled all citywide convention business for both hotels while serving on the Destination DC Strategic Advisory Council for conventions and citywides. With Vail Resorts he oversaw group sales strategy across a four-property destination resort portfolio in Jackson, Wyoming.</p>
+<p>Earlier, he led the luxury rebrand of The Hythe, a Luxury Collection Resort in Vail, delivering $28M in transient and group revenue and $4M in catering revenue. At Grand Hyatt Washington and Hyatt Regency Washington he directed enterprise sales strategy against a combined $100M group and catering budget, led a 21-person sales organization, and handled all citywide convention business for both hotels while serving on the Destination DC Strategic Advisory Council for conventions and citywides. With Vail Resorts he oversaw group sales strategy across a four-property destination resort portfolio in Jackson, Wyoming.</p>
 <p>He holds a Bachelor of Science in Hospitality Management from Colorado State University and is based in Vail, Colorado.</p>
+</section>
+
+<section aria-labelledby="timeline-heading">
+<h2 id="timeline-heading">Career Timeline</h2>
+<table>
+<thead>
+<tr><th>Period</th><th>Role Type</th><th>Scope</th><th>Market</th></tr>
+</thead>
+<tbody>
+<tr><td>2024 to present</td><td>Advisory Council Member</td><td>$5.33M annual DMO budget recommendation to Town Council</td><td>Vail, Colorado</td></tr>
+<tr><td>2023 to present</td><td>Director of Sales and Marketing</td><td>90-unit luxury condo-hotel, 7,500 sq ft meeting space; full commercial accountability</td><td>Vail Valley, Colorado</td></tr>
+<tr><td>2022 to 2023</td><td>Senior Account Executive</td><td>Consultative B2B technology sales, HR and finance leadership</td><td>Remote (Austin, TX)</td></tr>
+<tr><td>2020 to 2022</td><td>Wealth Management Mortgage Loan Originator</td><td>High-net-worth clients; family office and private banking referral network</td><td>Avon, Colorado (remote)</td></tr>
+<tr><td>2019</td><td>General Manager</td><td>Regional destination management company, full operational and commercial responsibility</td><td>Avon, Colorado</td></tr>
+<tr><td>2015 to 2019</td><td>Director of Sales and Marketing</td><td>$28M revenue; luxury rebrand of The Hythe, a Luxury Collection Resort; 12-person team</td><td>Vail, Colorado</td></tr>
+<tr><td>2012 to 2015</td><td>Area Associate Director of Sales</td><td>$100M combined group and catering budget; 21-person team; citywide convention production</td><td>Washington, DC</td></tr>
+<tr><td>2008 to 2012</td><td>Area Associate Director of Sales</td><td>Multi-property destination resort portfolio (4 properties)</td><td>Jackson, Wyoming</td></tr>
+<tr><td>2002 to 2007</td><td>Sales Manager / Early Career</td><td>Hospitality sales, healthcare sales, financial services</td><td>Southern California</td></tr>
+<tr><td>1998 to 2002</td><td>Early Career Hospitality</td><td>Catering and sales operations; foundational hospitality roles</td><td>Southern California</td></tr>
+</tbody>
+</table>
 </section>
 
 <section aria-labelledby="expertise-heading">
 <h2 id="expertise-heading">Areas of Expertise</h2>
+<p>Patrick W. Davis's commercial expertise spans the following domains:</p>
 <ul>
 <li>Global Sales Strategy and Revenue Growth</li>
 <li>Luxury and Affluent Consumer Marketing</li>
@@ -129,7 +186,7 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--border);font-
 
 <h3>Advisory Council Member, Vail Local Marketing District</h3>
 <p class="role-meta">Vail, Colorado | January 2024 to present</p>
-<p>Member of the Vail Local Marketing District Advisory Council, the official destination marketing organization for the Town of Vail, a public special district under Colorado law. Plans and recommends the district's $5.33M annual destination marketing budget to Vail Town Council. Every recommended budget has been approved. Helped guide a multi-year destination brand transformation for the "Discover Your Vail Moment" campaign. (<a href="https://vailgov.granicus.com/boards/w/042fbeba58974740/members/1834546">Government record</a>)</p>
+<p>Patrick W. Davis is a member of the Vail Local Marketing District Advisory Council, the official destination marketing organization for the Town of Vail, a public special district under Colorado law. Plans and recommends the district's $5.33M annual destination marketing budget to Vail Town Council. Every recommended budget has been approved. Helped guide a multi-year destination brand transformation for the "Discover Your Vail Moment" campaign. (<a href="https://vailgov.granicus.com/boards/w/042fbeba58974740/members/1834546">Government record</a>)</p>
 
 <h3>Board Member (concluded), Children's Garden of Learning</h3>
 <p class="role-meta">Colorado</p>
@@ -137,25 +194,26 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--border);font-
 </section>
 
 <section aria-labelledby="career-heading">
-<h2 id="career-heading">Career Summary</h2>
+<h2 id="career-heading">Career Detail</h2>
 
 <h3>Director of Sales and Marketing</h3>
 <p class="role-meta">Independently managed luxury condo-hotel, Vail Valley, Colorado | March 2023 to present</p>
-<p>Owns full commercial accountability for a 90-unit condo-hotel with 7,500 sq ft of meeting and event space. Leads integrated commercial and marketing strategy across sales, brand positioning, digital, and distribution. Leads an initiative to bring marketing in-house using AI and automation. Secured the property's selection as one of five Vail and Beaver Creek properties in Costco Travel's market launch. Secured placement in the American Express Hotel Collection.</p>
+<p>Patrick W. Davis owns full commercial accountability for a 90-unit condo-hotel with 7,500 sq ft of meeting and event space. Leads integrated commercial and marketing strategy across sales, brand positioning, digital, and distribution. Leads an initiative to bring marketing in-house using AI and automation. Secured the property's selection as one of five Vail and Beaver Creek properties in Costco Travel's market launch. Secured placement in the American Express Hotel Collection. See also: <a href="/condo-hotel-commercial-leadership.html">Condo-hotel commercial leadership</a> and <a href="/in-housing-hotel-marketing.html">In-housing hotel marketing</a>.</p>
 
 <h3>Director of Sales and Marketing, The Hythe, a Luxury Collection Resort</h3>
 <p class="role-meta">Vail, Colorado | November 2015 to February 2019</p>
-<p>Led full commercial strategy delivering $28M in transient and group revenue and $4M in catering revenue. Led the luxury rebrand and repositioning of the property into The Hythe, a Luxury Collection Resort. Built and led a 12-person sales and events organization.</p>
+<p>Patrick W. Davis led full commercial strategy delivering $28M in transient and group revenue and $4M in catering revenue. Led the luxury rebrand and repositioning of the property into The Hythe, a Luxury Collection Resort. Built and led a 12-person sales and events organization. See also: <a href="/luxury-hotel-rebrand.html">Luxury hotel rebrand and repositioning</a>.</p>
 
 <h3>Area Associate Director of Sales, Grand Hyatt Washington and Hyatt Regency Washington</h3>
 <p class="role-meta">Washington, DC | July 2012 to November 2015</p>
-<p>Directed enterprise-level sales strategy against a $70M annual group sales budget and $30M catering budget, approximately $100M combined across two major hotel assets. Led a 21-person sales organization with 6 direct reports, leading citywide production and handling all citywide convention business across both properties. Served on the Destination DC Strategic Advisory Council for conventions and citywides. Negotiated a 7-year, $7M enterprise contract.</p>
+<p>Patrick W. Davis directed enterprise-level sales strategy against a $70M annual group sales budget and $30M catering budget, approximately $100M combined across two major hotel assets. Led a 21-person sales organization with 6 direct reports, leading citywide production and handling all citywide convention business across both properties. Served on the Destination DC Strategic Advisory Council for conventions and citywides. Negotiated a 7-year, $7M enterprise contract. See also: <a href="/citywide-convention-sales.html">Citywide and convention sales strategy</a> and <a href="/dmo-governance.html">DMO governance</a>.</p>
 
 <h3>Area Associate Director of Sales, Vail Resorts (Grand Teton Lodge Company)</h3>
 <p class="role-meta">Jackson, Wyoming | March 2008 to July 2012</p>
-<p>Oversaw group sales strategy and revenue planning across a multi-property destination resort portfolio: Jackson Lake Lodge, Jenny Lake Lodge, Colter Bay Village, and Headwaters Lodge.</p>
+<p>Patrick W. Davis oversaw group sales strategy and revenue planning across a multi-property destination resort portfolio: Jackson Lake Lodge, Jenny Lake Lodge, Colter Bay Village, and Headwaters Lodge.</p>
 
 <h3>Additional Experience (2019 to 2023)</h3>
+<p>Patrick W. Davis held three consecutive roles between 2019 and 2023 before returning to hotel commercial leadership in 2023:</p>
 <ul>
 <li>General Manager, PRA (destination management company), Avon, CO, March 2019 to November 2019</li>
 <li>Wealth Management Mortgage Loan Originator, U.S. Bank, Avon, CO, March 2020 to November 2022</li>
@@ -163,26 +221,26 @@ footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--border);font-
 </ul>
 
 <h3>Entrepreneurial Venture</h3>
-<p>Founder of Caffys Waters, a premium bottled water brand, Washington DC metro, 2013 to 2017. Built distribution across grocery, hotels, and specialty markets. Pitched Amazon at its headquarters following their inbound request.</p>
+<p>Patrick W. Davis is the founder of Caffys Waters, a premium bottled water brand, Washington DC metro, 2013 to 2017. Built distribution across grocery, hotels, and specialty markets. Pitched Amazon at its headquarters following their inbound request.</p>
 
 <h3>Early Career (1998 to 2007)</h3>
-<p>Commercial and sales leadership roles at Anaheim Marriott, Marriott International EBC, Newport Beach Marriott, Vertigo Diagnostics, Secured Funding Corporation, and Countrywide Home Loans. Foundational hospitality sales and catering operations launched a commercial career now spanning 25+ years.</p>
+<p>Patrick W. Davis held commercial and sales leadership roles at Anaheim Marriott, Marriott International EBC, Newport Beach Marriott, Vertigo Diagnostics, Secured Funding Corporation, and Countrywide Home Loans. Foundational hospitality sales and catering operations launched a commercial career now spanning 25+ years.</p>
 </section>
 
 <section aria-labelledby="education-heading">
 <h2 id="education-heading">Education</h2>
-<p>Bachelor of Science, Hospitality Management, Colorado State University, Fort Collins, Colorado</p>
+<p>Patrick W. Davis holds a Bachelor of Science in Hospitality Management from Colorado State University, Fort Collins, Colorado.</p>
 <p>Professional Development: Advanced Negotiation and Complex Sales Training; Sales Leadership and Communication Frameworks; Essential Skills in Leadership for Hospitality Certificate, Cornell University; Former Real Estate Broker, California (license inactive).</p>
 </section>
 
 <section aria-labelledby="geo-heading">
 <h2 id="geo-heading">Geography</h2>
-<p>Based in Vail, Colorado. Professional community spans the Colorado mountain resort and Front Range markets, the Washington DC metro, and Wyoming resort destinations.</p>
+<p>Patrick W. Davis is based in Vail, Colorado. His professional community spans the Colorado mountain resort and Front Range markets, the Washington DC metro, and Wyoming resort destinations.</p>
 </section>
 
 </main>
 <footer>
-<p>Last updated 2026-09-05</p>
+<p>Last updated 2026-09-06</p>
 </footer>
 </div>
 </body>
